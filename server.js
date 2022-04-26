@@ -5,7 +5,8 @@ const PORT = 5000;
 const app = express();
 
 app.get("/", (req, res) => {
-  res.status(200).json("nu vse ok");
+  console.log(req.query);
+  res.status(200).json("Ну нормалек все");
 });
 
 app.listen(PORT, () => {
